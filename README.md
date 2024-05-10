@@ -12,7 +12,7 @@ To use the interpreter, follow these steps:
 2. **Executing the Interpreter:**
    - Execute the interpreter by running the compiled executable (`a.out`) in the terminal:
      ```
-     ./output text.txt
+     ./a.out text.txt
      ```
 
 3. **Command-Based Grammar:**
@@ -33,7 +33,7 @@ To use the interpreter, follow these steps:
 4. **Dump Memory Visualization:**
    - Use the `dumpMemory` command to visualize the memory contents during program execution.
 
-## Syntax
+## Syntax and Grammar
 
 - **Forbidden Symbols:**
   - The custom assembler language prohibits the use of the following symbols: `!@#$%^&*()-+={}[]\|;'"<>./?`
@@ -43,6 +43,16 @@ To use the interpreter, follow these steps:
 
 - **Memory Domain References:**
   - Memory addresses can be referenced using `[]` notation inside the code.
+
+- **Registers:**
+  - The following registers are available:
+    - `AYB`
+    - `BEN`
+    - `GIM`
+    - `DA`
+    - `ECH`
+    - `ZA`
+    - `GH` (acts as the instruction pointer)
 
 - **Markers:**
   - Markers serve as labels within the code and cannot be repeated. They are defined by writing the marker name followed by a colon (`:`).
