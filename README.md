@@ -12,7 +12,7 @@ To use the interpreter, follow these steps:
 2. **Executing the Interpreter:**
    - Execute the interpreter by running the compiled executable (`a.out`) in the terminal:
      ```
-     ./a.out text.txt
+     ./output text.txt
      ```
 
 3. **Command-Based Grammar:**

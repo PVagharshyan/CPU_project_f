@@ -1,2 +1,26 @@
-MOV AYB, BEN
+dumpMemory            
+MOV AYB, [24]     
+MOV BEN, 10             
+ADD AYB, BEN            
+CMP [25], AYB     
+JE marker1              
+JMP marker2             
+
+marker1:
+  SUB AYB, 5            
+  JG marker3            
+
+marker2:
+  DIV AYB, 2            
+  JMP marker4           
+
+marker3:
+  MUL BEN, 3            
+  JMP marker5           
+
+marker4:
+  dumpMemory            
+
+marker5:
+  MOV [26], BEN   
 
